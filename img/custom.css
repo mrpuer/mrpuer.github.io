@@ -5623,10 +5623,5 @@ Animation example, for spinners
 		transform: rotate(359deg);
 	}
 }
-.css-adaptive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	}
 
 
