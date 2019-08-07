@@ -1,24 +1,177 @@
 body {
     background-color: #EFF6FF;
-    padding: 50px;
+    padding: 70px 50px;
+    font-family: 'Barlow', sans-serif;
+    color: #2A4A5C;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 19px;
+}
+
+h2 {
+    font-size: 17px;
 }
 
 .main-block {
     width: 100%;
     display: inline-flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     background-color: #0b2e13;
 }
 
 .left-section {
-    max-width: 63%;
     background-color: #1e58d6;
+    min-width: 60%;
 }
 
 .right-section {
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
+    align-items: flex-start;
+    padding: 30px 50px;
+    width: 35%;
     flex-direction: column;
-    background-color: #1d9d4a;
+    background-color: #ffffff;
+}
+
+.button {
+    color: #ffffff;
+    text-decoration: none;
+    padding: .5em 0.5em 0.8em;
+    font-size: 11px;
+    font-weight: bold;
+    width: 43%;
+}
+
+.social-txt {
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.fb {
+    background: #255A9B;
+}
+
+.in {
+    background: #0076B6;
+}
+
+.submit {
+    background: #3698FB;
+    font-size: 11px;
+    border-radius: 3px;
+    width: 50%;
+    text-align: center;
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 350px;
+    align-self: flex-start;
+}
+
+.or-divider {
+    align-self: center;
+    font-size: 10px;
+    font-weight: bold;
+    width: 20%;
+}
+
+.or-divider:before,
+.or-divider:after {
+    /* Обязательно указываем пустое свойство content,
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии,
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 1px;
+    /* Добавляем цвет для линии */
+    background-color: #EEEEEE;
+    /* Добавляем пседоэлемантам возможность изменить
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.or-divider:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия
+    ** встала рядом с текстом слева */
+    margin-left: -60%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -7px;
+}
+.or-divider:after {
+    /* Смещаем правую линию на 100% вправо, чтобы
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -7px;
+}
+
+.options-title {
+     font-size: 12px;
+ }
+
+.options label {
+    margin-top: 2px;
+}
+
+.agree {
+    font-size: 10px;
+}
+
+a {
+    color: #3698FB;
+}
+
+.flex-row {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input {
+    height:20px;
+    transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    outline: none;
+    border: #EEEEEE 1px solid;
+    min-width: 150px;
+    width: 43%;
+    margin: 0;
+    padding: 10px;
+}
+
+.input:focus {
+    border-left:#3698FB 2px solid;
+    border-top: #EEEEEE 1px solid;
+    border-right: #EEEEEE 1px solid;
+    border-bottom: #EEEEEE 1px solid;
+}
+
+.tooltip {
+    padding: 5px;
+    font-size: 11px;
+    color: #7B8A92;
+    max-width: 200px;
+    -moz-box-shadow:0 0 10px #EEEEEE;
+    -webkit-box-shadow:0 0 10px #EEEEEE;
+    box-shadow:0 0 10px #EEEEEE;
+}
+
+svg {
+    margin: 3px 5px 0 5px;
+}
+
+.placeholder {
+    color: #96A5B1;
+    margin: -4em 0 0 1em;
+    font-size: 10px;
+    font-weight: bold;
 }
