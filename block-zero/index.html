@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" type="text/css" media="all">
@@ -46,11 +46,12 @@
         <div class="user-input flex-row">
             <label>
                 <input type="text" name="email" class="input email">
-                <div class="placeholder">Email</div>
+                <p class="placeholder">Email</p>
             </label>
+            <span style="width: 30px"></span>
             <label>
                 <input type="text" name="phone" class="input phone">
-                <div class="placeholder">Phone</div>
+                <p class="placeholder">Phone</p>
             </label>
         </div>
         <div class="options-title">
@@ -60,12 +61,16 @@
         <div class="options flex-row">
                 <input type="radio" name="type" value="individual" id="individual">
             <label for="individual">Individual</label>
+            <span class="info">i</span>
                 <input type="radio" name="type" value="business" id="business">
                 <label for="business">Business</label>
+            <span class="info">i</span>
                 <input type="radio" name="type" value="ira" id="ira">
             <label for="ira">IRA</label>
+            <span class="info">i</span>
                 <input type="radio" name="type" value="trust" id="trust">
             <label for="trust">Trust</label>
+            <span class="info">i</span>
         </div>
         <div class="tooltip">
             I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common.
@@ -75,7 +80,7 @@
                 <input type="checkbox">
             </label> I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a>
         </div>
-        <div class="submit-button">
+        <div class="submit-button flex-row">
             <a href="#" class="button submit">Create Account</a>
         </div>
     </div>

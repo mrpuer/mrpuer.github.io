@@ -12,6 +12,7 @@ h1 {
 
 h2 {
     font-size: 17px;
+    margin-top: 50px;
 }
 
 .main-block {
@@ -23,7 +24,7 @@ h2 {
 
 .left-section {
     background-color: #1e58d6;
-    min-width: 60%;
+    min-width: 55%;
 }
 
 .right-section {
@@ -31,7 +32,7 @@ h2 {
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 30px 50px;
-    width: 35%;
+    width: 38%;
     flex-direction: column;
     background-color: #ffffff;
 }
@@ -42,7 +43,6 @@ h2 {
     padding: .5em 0.5em 0.8em;
     font-size: 11px;
     font-weight: bold;
-    width: 43%;
 }
 
 .social-txt {
@@ -52,24 +52,22 @@ h2 {
 
 .fb {
     background: #255A9B;
+    width: 43%;
 }
 
 .in {
     background: #0076B6;
+    width: 43%;
 }
 
 .submit {
     background: #3698FB;
-    font-size: 11px;
+    font-size: 14px;
     border-radius: 3px;
-    width: 50%;
-    text-align: center;
-}
-
-.submit-button {
     width: 100%;
-    max-width: 350px;
-    align-self: flex-start;
+    text-align: center;
+    max-width: 200px;
+    margin-top: 30px;
 }
 
 .or-divider {
@@ -113,6 +111,7 @@ h2 {
     right: -7px;
 }
 
+
 .options-title {
      font-size: 12px;
  }
@@ -121,8 +120,23 @@ h2 {
     margin-top: 2px;
 }
 
+.info {
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #AFAFAF;
+    color: #AFAFAF;
+    font-weight: bold;
+    font-size: 8px;
+    margin: 0.6em 1.2em 0 0;
+}
+
 .agree {
     font-size: 10px;
+    margin-top: 20px;
 }
 
 a {
